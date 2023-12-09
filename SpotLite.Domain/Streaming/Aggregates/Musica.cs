@@ -1,4 +1,5 @@
-﻿using SpotLite.Domain.Streaming.ValueObjects;
+﻿using SpotLite.Domain.Core.ValueObjects;
+using SpotLite.Domain.Streaming.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;

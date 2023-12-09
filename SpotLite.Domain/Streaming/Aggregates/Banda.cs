@@ -11,6 +11,10 @@ namespace SpotLite.Domain.Streaming.Aggregates
         public Guid Id { get; set; }
         public String Nome { get; set; }
         public String Descricao { get; set; }
-        public String D { get; set; }
+        public String Backdrop { get; set; }
+        public List<Album> Albums { get; set; } = new List<Album>();
+
+        public void AdicionarAlbum(Album album) =>
+            this.Albums.Add(album);
     }
 }
