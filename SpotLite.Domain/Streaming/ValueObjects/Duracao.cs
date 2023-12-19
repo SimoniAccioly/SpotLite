@@ -12,8 +12,8 @@ namespace SpotLite.Domain.Streaming.ValueObjects
         public Duracao(int valor)
         {
             if (valor < 0)
-                throw new ArgumentException("Duracao da musica nao pode ser negativa")
-                    ; this.Valor = valor;
+                throw new ArgumentException("Duracao da musica nao pode ser negativa");
+                     this.Valor = valor;
         }
 
         public String Formatado()

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SpotLite.Domain.Transacao.ValueObject
 {
-    internal class Merchant
+    public record Merchant
     {
+        public string Nome { get; set; }
     }
 }

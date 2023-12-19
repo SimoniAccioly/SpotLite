@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Notificacao\" />
+    <Compile Remove="Notificacao\**" />
+    <EmbeddedResource Remove="Notificacao\**" />
+    <None Remove="Notificacao\**" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,9 +1,5 @@
 ﻿using SpotLite.Domain.Core.ValueObject;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SpotLite.Domain.Transacao.ValueObject;
 
 namespace SpotLite.Domain.Transacao.Agreggates
 {
@@ -13,5 +9,7 @@ namespace SpotLite.Domain.Transacao.Agreggates
         public DateTime DtTransacao { get; set; }
         public Monetario Valor { get; set; }
         public String Descricao { get; set; }
+        public Merchant Merchant { get; set; }
+
     }
 }
