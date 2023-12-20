@@ -16,4 +16,9 @@
     <PackageReference Include="FluentValidation" Version="11.8.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Conta\Rules\" />
+    <Folder Include="Conta\ValueObjects\" />
+  </ItemGroup>
+
 </Project>

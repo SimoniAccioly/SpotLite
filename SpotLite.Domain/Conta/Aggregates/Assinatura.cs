@@ -8,6 +8,6 @@ namespace SpotLite.Domain.Conta.Aggregates
         public Guid Id { get; set; }
         public Plano Plano { get; set; }
         public Boolean Ativo { get; set; }
-        public DateTime DtAtivacao { get; }
+        public DateTime DtAtivacao { get; set; }
     }
 }
