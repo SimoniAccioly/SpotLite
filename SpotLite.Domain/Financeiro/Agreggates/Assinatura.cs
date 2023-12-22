@@ -1,13 +1,10 @@
-﻿using SpotLite.Domain.Streaming.Aggregates;
-
-
-namespace SpotLite.Domain.Conta.Aggregates
+﻿namespace SpotLite.Domain.Financeiro.Agreggates
 {
     public class Assinatura
     {
         public Guid Id { get; set; }
         public Plano Plano { get; set; }
-        public Boolean Ativo { get; set; }
+        public bool Ativo { get; set; }
         public DateTime DtAtivacao { get; set; }
     }
 }

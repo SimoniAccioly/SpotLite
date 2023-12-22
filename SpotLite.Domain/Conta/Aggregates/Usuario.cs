@@ -1,7 +1,6 @@
 ﻿using SpotLite.Domain.Core.ValueObject;
-using SpotLite.Domain.Streaming.Aggregates;
-using SpotLite.Domain.Transacao.Agreggates;
-using SpotLite.Domain.Transacao.ValueObject;
+using SpotLite.Domain.Financeiro.Agreggates;
+using SpotLite.Domain.Financeiro.ValueObject;
 using System.Security.Cryptography;
 using System.Text;
 

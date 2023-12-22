@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SpotLite.Domain.Notificação
+namespace SpotLite.Domain.Financeiro.Agreggates
 {
     public class Notificacao
     {
         public Guid Id { get; set; }
         public DateTime DtNotificacao { get; set; }
-        public String Mensagem { get; set; }
-        public String Titulo { get; set; }
+        public string Mensagem { get; set; }
+        public string Titulo { get; set; }
         public Usuario UsuarioDestino { get; set; }
         public Usuario? UsuarioRemetente { get; set; }
         public TipoNotificacao TipoNotificacao { get; set; }

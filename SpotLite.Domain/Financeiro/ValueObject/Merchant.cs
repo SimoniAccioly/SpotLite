@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SpotLite.Domain.Transacao.ValueObject
+namespace SpotLite.Domain.Financeiro.ValueObject
 {
     public record Merchant
     {

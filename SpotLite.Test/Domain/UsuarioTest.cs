@@ -1,6 +1,5 @@
 ﻿using SpotLite.Domain.Conta.Aggregates;
-using SpotLite.Domain.Streaming.Aggregates;
-using SpotLite.Domain.Transacao.Agreggates;
+using SpotLite.Domain.Financeiro.Agreggates;
 using System;
 using System.Collections.Generic;
 using System.Linq;

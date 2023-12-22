@@ -1,4 +1,4 @@
-﻿using SpotLite.Domain.Transacao.Agreggates;
+﻿using SpotLite.Domain.Financeiro.Agreggates;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +20,7 @@ namespace SpotLite.Test.Domain
                 Numero = "6465465466",
             };
 
-            var merchant = new SpotLite.Domain.Transacao.ValueObject.Merchant()
+            var merchant = new SpotLite.Domain.Financeiro.ValueObject.Merchant()
             {
                 Nome = "Dummy"
             };
@@ -42,7 +42,7 @@ namespace SpotLite.Test.Domain
                 Numero = "6465465466",
             };
 
-            var merchant = new SpotLite.Domain.Transacao.ValueObject.Merchant()
+            var merchant = new SpotLite.Domain.Financeiro.ValueObject.Merchant()
             {
                 Nome = "Dummy"
             };
@@ -62,7 +62,7 @@ namespace SpotLite.Test.Domain
                 Numero = "6465465466",
             };
 
-            var merchant = new SpotLite.Domain.Transacao.ValueObject.Merchant()
+            var merchant = new SpotLite.Domain.Financeiro.ValueObject.Merchant()
             {
                 Nome = "Dummy"
             };
@@ -82,11 +82,11 @@ namespace SpotLite.Test.Domain
                 Numero = "6465465466",
             };
 
-            cartao.Transacoes.Add(new SpotLite.Domain.Transacao.Agreggates.Transacao()
+            cartao.Transacoes.Add(new SpotLite.Domain.Financeiro.Agreggates.Transacao()
             {
                 DtTransacao = DateTime.Now,
                 Id = Guid.NewGuid(),
-                Merchant = new SpotLite.Domain.Transacao.ValueObject.Merchant()
+                Merchant = new SpotLite.Domain.Financeiro.ValueObject.Merchant()
                 {
                     Nome = "Dummy"
                 },
@@ -94,7 +94,7 @@ namespace SpotLite.Test.Domain
                 Descricao = "saljasdlak"
             });
 
-            var merchant = new SpotLite.Domain.Transacao.ValueObject.Merchant()
+            var merchant = new SpotLite.Domain.Financeiro.ValueObject.Merchant()
             {
                 Nome = "Dummy"
             };
@@ -115,11 +115,11 @@ namespace SpotLite.Test.Domain
                 Numero = "6465465466",
             };
 
-            cartao.Transacoes.Add(new SpotLite.Domain.Transacao.Agreggates.Transacao()
+            cartao.Transacoes.Add(new SpotLite.Domain.Financeiro.Agreggates.Transacao()
             {
                 DtTransacao = DateTime.Now.AddMinutes(-1),
                 Id = Guid.NewGuid(),
-                Merchant = new SpotLite.Domain.Transacao.ValueObject.Merchant()
+                Merchant = new SpotLite.Domain.Financeiro.ValueObject.Merchant()
                 {
                     Nome = "Dummy"
                 },
@@ -127,11 +127,11 @@ namespace SpotLite.Test.Domain
                 Descricao = "saljasdlak"
             });
 
-            cartao.Transacoes.Add(new SpotLite.Domain.Transacao.Agreggates.Transacao()
+            cartao.Transacoes.Add(new SpotLite.Domain.Financeiro.Agreggates.Transacao()
             {
                 DtTransacao = DateTime.Now.AddMinutes(-0.5),
                 Id = Guid.NewGuid(),
-                Merchant = new SpotLite.Domain.Transacao.ValueObject.Merchant()
+                Merchant = new SpotLite.Domain.Financeiro.ValueObject.Merchant()
                 {
                     Nome = "Dummy"
                 },
@@ -139,11 +139,11 @@ namespace SpotLite.Test.Domain
                 Descricao = "saljasdlak"
             });
 
-            cartao.Transacoes.Add(new SpotLite.Domain.Transacao.Agreggates.Transacao()
+            cartao.Transacoes.Add(new SpotLite.Domain.Financeiro.Agreggates.Transacao()
             {
                 DtTransacao = DateTime.Now,
                 Id = Guid.NewGuid(),
-                Merchant = new SpotLite.Domain.Transacao.ValueObject.Merchant()
+                Merchant = new SpotLite.Domain.Financeiro.ValueObject.Merchant()
                 {
                     Nome = "Dummy"
                 },
@@ -152,7 +152,7 @@ namespace SpotLite.Test.Domain
             });
 
 
-            var merchant = new SpotLite.Domain.Transacao.ValueObject.Merchant()
+            var merchant = new SpotLite.Domain.Financeiro.ValueObject.Merchant()
             {
                 Nome = "Dummy"
             };

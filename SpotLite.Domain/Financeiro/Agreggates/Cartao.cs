@@ -1,7 +1,7 @@
 ﻿using SpotLite.Domain.Core.ValueObject;
-using SpotLite.Domain.Transacao.ValueObject;
+using SpotLite.Domain.Financeiro.ValueObject;
 
-namespace SpotLite.Domain.Transacao.Agreggates
+namespace SpotLite.Domain.Financeiro.Agreggates
 {
     public class Cartao
     {
