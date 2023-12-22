@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotLite.Domain", "SpotLite.Domain\SpotLite.Domain.csproj", "{8E6E1A93-A0CF-4A46-BA32-DA66D4910E2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotLite.Test", "SpotLite.Test\SpotLite.Test.csproj", "{4F963303-8AD2-43BE-A673-DABBA5A501B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotLite.Test", "SpotLite.Test\SpotLite.Test.csproj", "{4F963303-8AD2-43BE-A673-DABBA5A501B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotLite.Repository", "SpotLite.Repository\SpotLite.Repository.csproj", "{8173385F-9ABB-4DCF-BBD5-80DF3EDB53EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4F963303-8AD2-43BE-A673-DABBA5A501B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F963303-8AD2-43BE-A673-DABBA5A501B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F963303-8AD2-43BE-A673-DABBA5A501B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8173385F-9ABB-4DCF-BBD5-80DF3EDB53EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8173385F-9ABB-4DCF-BBD5-80DF3EDB53EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8173385F-9ABB-4DCF-BBD5-80DF3EDB53EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8173385F-9ABB-4DCF-BBD5-80DF3EDB53EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

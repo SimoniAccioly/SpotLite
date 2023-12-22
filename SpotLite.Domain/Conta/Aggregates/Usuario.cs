@@ -20,7 +20,7 @@ namespace SpotLite.Domain.Conta.Aggregates
         public List<Assinatura> Assinaturas { get; set; } = new List<Assinatura>();
         public List<PlayList> Playlists { get; set; } = new List<PlayList>();
 
-        public void CriarConta(string nome, string email, string senha, string  cpf, DateTime dtNascimento, Plano plano, Cartao cartao)
+        public void CriarConta(string nome, string email, string senha, string cpf, DateTime dtNascimento, Plano plano, Cartao cartao)
         {
             this.Nome = nome;
             this.Email = email;
@@ -38,8 +38,6 @@ namespace SpotLite.Domain.Conta.Aggregates
 
             //Criar a playlist padrão do usuario
             this.CriarPlaylist(nome: NOME_PLAYLIST, publica: false);
-
-
         }
 
         public void CriarPlaylist(string nome, bool publica = true)
