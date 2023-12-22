@@ -88,5 +88,20 @@ namespace SpotLite.Test.Domain
                 usuario.CriarConta(nome, email, senha, cpf,DateTime.Now, plano, cartao);
             });
         }
+
+        [Fact]
+        public void DeveAdicionarPlaylistCorretamente()
+        {
+            // Arrange
+            var usuario = new Usuario();
+
+            // Act
+            usuario.CriarPlaylist("MinhaPlaylist", true);
+
+            // Assert
+            Assert.Single(usuario.Playlists);
+            Assert.Equal("MinhaPlaylist", usuario.Playlists.First().Nome);
+            Assert.True(usuario.Playlists.First().Publica);
+        }
     }
 }
