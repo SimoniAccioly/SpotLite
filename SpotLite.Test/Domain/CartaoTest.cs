@@ -18,6 +18,8 @@ namespace SpotLite.Test.Domain
                 Ativo = true,
                 Limite = 1000M,
                 Numero = "6465465466",
+                Validade = DateTime.Now.AddYears(2),
+                CVV = 123
             };
 
             var merchant = new SpotLite.Domain.Financeiro.ValueObject.Merchant()
@@ -40,6 +42,8 @@ namespace SpotLite.Test.Domain
                 Ativo = false,
                 Limite = 1000M,
                 Numero = "6465465466",
+                Validade = DateTime.Now.AddYears(2),
+                CVV = 123
             };
 
             var merchant = new SpotLite.Domain.Financeiro.ValueObject.Merchant()
@@ -60,6 +64,8 @@ namespace SpotLite.Test.Domain
                 Ativo = true,
                 Limite = 10M,
                 Numero = "6465465466",
+                Validade = DateTime.Now.AddYears(2),
+                CVV = 123
             };
 
             var merchant = new SpotLite.Domain.Financeiro.ValueObject.Merchant()
@@ -80,6 +86,8 @@ namespace SpotLite.Test.Domain
                 Ativo = true,
                 Limite = 1000M,
                 Numero = "6465465466",
+                Validade = DateTime.Now.AddYears(2),
+                CVV = 123
             };
 
             cartao.Transacoes.Add(new SpotLite.Domain.Financeiro.Agreggates.Transacao()
@@ -113,6 +121,8 @@ namespace SpotLite.Test.Domain
                 Ativo = true,
                 Limite = 1000M,
                 Numero = "6465465466",
+                Validade = DateTime.Now.AddYears(2),
+                CVV = 123
             };
 
             cartao.Transacoes.Add(new SpotLite.Domain.Financeiro.Agreggates.Transacao()

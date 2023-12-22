@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using SpotLite.Domain.PlayList.Aggregates;
 using SpotLite.Domain.Streaming.Aggregates;
 using System;
 using System.Collections.Generic;

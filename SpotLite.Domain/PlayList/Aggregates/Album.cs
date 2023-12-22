@@ -1,4 +1,6 @@
-﻿namespace SpotLite.Domain.Streaming.Aggregates
+﻿using SpotLite.Domain.Streaming.Aggregates;
+
+namespace SpotLite.Domain.PlayList.Aggregates
 {
     public class Album
     {
@@ -7,8 +9,8 @@
         public List<Musica> Musica { get; set; } = new List<Musica>();
 
         public void AdicionarMusica(Musica musica) =>
-           this.Musica.Add(musica);
+           Musica.Add(musica);
         public void AdicionarMusica(List<Musica> musica) =>
-            this.Musica.AddRange(musica);
+            Musica.AddRange(musica);
     }
 }
