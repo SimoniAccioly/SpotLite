@@ -20,10 +20,11 @@ namespace SpotLite.Domain.Conta.Aggregates
         public List<Assinatura> Assinaturas { get; set; } = new List<Assinatura>();
         public List<PlayList> Playlists { get; set; } = new List<PlayList>();
 
-        public void CriarConta(string nome, string email, string senha, DateTime dtNascimento, Plano plano, Cartao cartao)
+        public void CriarConta(string nome, string email, string senha, string  cpf, DateTime dtNascimento, Plano plano, Cartao cartao)
         {
             this.Nome = nome;
             this.Email = email;
+            this.CPF = cpf;
             this.DtNascimento = dtNascimento;
 
             //Criptografar a senha

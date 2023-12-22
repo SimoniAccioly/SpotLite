@@ -31,17 +31,19 @@ namespace SpotLite.Test.Domain
 
             string nome = "Dummy Usuario";
             string email = "teste@teste.com";
+            string cpf = "000.000.000-000";
             string senha = "123456";
 
             //Act
             Usuario usuario = new Usuario();
-            usuario.CriarConta(nome, email, senha, DateTime.Now, plano, cartao);
+            usuario.CriarConta(nome, email, senha, cpf, DateTime.Now, plano, cartao);
 
             //Assert
             Assert.NotNull(usuario.Email);
             Assert.NotNull(usuario.Nome);
             Assert.True(usuario.Email == email);
             Assert.True(usuario.Nome == nome);
+            Assert.True(usuario.CPF == cpf);
             Assert.True(usuario.Senha != senha);
 
             Assert.True(usuario.Assinaturas.Count > 0);
@@ -76,13 +78,14 @@ namespace SpotLite.Test.Domain
 
             string nome = "Dummy Usuario";
             string email = "teste@teste.com";
+            string cpf = "000.000.000-000";
             string senha = "123456";
 
             //Act
             Assert.Throws<Exception>(() =>
             {
                 Usuario usuario = new Usuario();
-                usuario.CriarConta(nome, email, senha, DateTime.Now, plano, cartao);
+                usuario.CriarConta(nome, email, senha, cpf,DateTime.Now, plano, cartao);
             });
         }
     }
