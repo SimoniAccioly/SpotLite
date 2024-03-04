@@ -1,4 +1,4 @@
-﻿using SpotLite.Domain.Conta.Aggregates;
+﻿using SpotLite.Domain.Conta.Agreggates;
 using SpotLite.Domain.Financeiro.Agreggates;
 using System;
 using System.Collections.Generic;

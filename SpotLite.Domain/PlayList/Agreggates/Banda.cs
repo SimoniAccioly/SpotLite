@@ -1,6 +1,6 @@
-﻿using SpotLite.Domain.PlayList.Aggregates;
+﻿using SpotLite.Domain.PlayList.Agreggates;
 
-namespace SpotLite.Domain.Streaming.Aggregates
+namespace SpotLite.Domain.Streaming.Agreggates
 {
     public class Banda
     {

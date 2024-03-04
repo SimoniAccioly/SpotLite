@@ -1,7 +1,7 @@
-﻿using SpotLite.Domain.Streaming.Aggregates;
+﻿using SpotLite.Domain.Streaming.Agreggates;
 
 
-namespace SpotLite.Domain.Conta.Aggregates
+namespace SpotLite.Domain.Conta.Agreggates
 {
     public class PlayList
     {

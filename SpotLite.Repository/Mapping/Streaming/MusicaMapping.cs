@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SpotLite.Domain.Streaming.Aggregates;
+using SpotLite.Domain.Streaming.Agreggates;
 using SpotLite.Domain.Streaming.ValueObjects;
 using System;
 using System.Collections.Generic;

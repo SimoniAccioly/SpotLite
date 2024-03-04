@@ -4,12 +4,13 @@ using SpotLite.Domain.Financeiro.ValueObject;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace SpotLite.Domain.Conta.Aggregates
+namespace SpotLite.Domain.Conta.Agreggates
 {
     public class Usuario
     {
         private const string NOME_PLAYLIST = "Favoritas";
 
+        //TODO - criar value object de email, senha e cpf
         public Guid Id { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }

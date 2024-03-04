@@ -1,6 +1,6 @@
 ﻿using SpotLite.Domain.Streaming.ValueObjects;
 
-namespace SpotLite.Domain.Streaming.Aggregates
+namespace SpotLite.Domain.Streaming.Agreggates
 {
     public class Musica
     {

@@ -23,7 +23,7 @@ namespace SpotLite.Domain.Core.ValueObject
 
         public string Formatado()
         {
-            return $"R$ {Valor.ToString("N2")}";
+            return $"R$ {this.Valor.ToString("N2")}";
         }
     }
 }

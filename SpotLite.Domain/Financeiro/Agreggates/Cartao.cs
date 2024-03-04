@@ -21,6 +21,8 @@ namespace SpotLite.Domain.Financeiro.Agreggates
         {
             //Verificar se um cartão está ativo 
             this.IsCartaoAtivo();
+
+            //Objeto Transacao
             Transacao transacao = new Transacao();
             transacao.Merchant = merchant;
             transacao.Valor = valor;
