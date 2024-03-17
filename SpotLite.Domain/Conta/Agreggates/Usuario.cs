@@ -19,7 +19,9 @@ namespace SpotLite.Domain.Conta.Agreggates
         public string CPF { get; set; }
         public List<Cartao> Cartoes { get; set; } = new List<Cartao>();
         public List<Assinatura> Assinaturas { get; set; } = new List<Assinatura>();
-        public List<PlayList> Playlists { get; set; } = new List<PlayList>();
+        public List<PlayList> PlayLists { get; set; } = new List<PlayList>();
+        public List<Notificacao> Notificacoes { get; set; } = new List<Notificacao>();
+
 
         public void CriarConta(string nome, string email, string senha, string cpf, DateTime dtNascimento, Plano plano, Cartao cartao)
         {
@@ -43,7 +45,7 @@ namespace SpotLite.Domain.Conta.Agreggates
 
         public void CriarPlaylist(string nome, bool publica = true)
         {
-            this.Playlists.Add(new PlayList()
+            this.PlayLists.Add(new PlayList()
             {
                 Nome = nome,
                 Publica = publica,

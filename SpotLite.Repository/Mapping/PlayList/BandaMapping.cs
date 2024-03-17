@@ -1,14 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SpotLite.Domain.PlayList.Agreggates;
-using SpotLite.Domain.Streaming.Agreggates;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SpotLite.Repository.Mapping.Streaming
+namespace SpotLite.Repository.Mapping.PlayList
 {
     public class BandaMapping : IEntityTypeConfiguration<Banda>
     {

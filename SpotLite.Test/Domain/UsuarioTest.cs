@@ -52,9 +52,9 @@ namespace SpotLite.Test.Domain
             Assert.True(usuario.Cartoes.Count > 0);
             Assert.Same(usuario.Cartoes[0], cartao);
 
-            Assert.True(usuario.Playlists.Count > 0);
-            Assert.True(usuario.Playlists[0].Nome == "Favoritas");
-            Assert.False(usuario.Playlists[0].Publica);
+            Assert.True(usuario.PlayLists.Count > 0);
+            Assert.True(usuario.PlayLists[0].Nome == "Favoritas");
+            Assert.False(usuario.PlayLists[0].Publica);
         }
 
         [Fact]
@@ -99,9 +99,9 @@ namespace SpotLite.Test.Domain
             usuario.CriarPlaylist("MinhaPlaylist", true);
 
             // Assert
-            Assert.Single(usuario.Playlists);
-            Assert.Equal("MinhaPlaylist", usuario.Playlists.First().Nome);
-            Assert.True(usuario.Playlists.First().Publica);
+            Assert.Single(usuario.PlayLists);
+            Assert.Equal("MinhaPlaylist", usuario.PlayLists.First().Nome);
+            Assert.True(usuario.PlayLists.First().Publica);
         }
     }
 }

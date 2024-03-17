@@ -1,4 +1,4 @@
-﻿using SpotLite.Domain.Streaming.Agreggates;
+﻿using SpotLite.Domain.PlayList.Agreggates;
 
 namespace SpotLite.Domain.PlayList.Agreggates
 {
