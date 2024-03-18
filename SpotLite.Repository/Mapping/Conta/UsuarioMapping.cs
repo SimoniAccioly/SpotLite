@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace SpotLite.Repository.Mapping.Conta
 {
-    public class Usuario : IEntityTypeConfiguration<Domain.Conta.Agreggates.Usuario>
+    public class UsuarioMapping : IEntityTypeConfiguration<Domain.Conta.Agreggates.Usuario>
     {
         public void Configure(EntityTypeBuilder<Domain.Conta.Agreggates.Usuario> builder)
         {
-            builder.ToTable(nameof(Usuario));
+            builder.ToTable(nameof(UsuarioMapping));
 
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
