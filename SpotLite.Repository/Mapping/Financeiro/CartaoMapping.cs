@@ -18,7 +18,7 @@ namespace SpotLite.Repository.Mapping.Financeiro
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.Property(x => x.Ativo).IsRequired();
-            builder.Property(x => x.Limite).IsRequired().HasMaxLength(50);
+
             builder.Property(x => x.Numero).IsRequired().HasMaxLength(50);
             builder.Property(x => x.Validade).IsRequired().HasMaxLength(50);
             builder.Property(x => x.CVV).IsRequired().HasMaxLength(50);

@@ -5,6 +5,8 @@ namespace SpotLite.Domain.Financeiro.Agreggates
 {
     public class Transacao
     {
+        public object Transacoes;
+
         public Guid Id { get; set; }
         public DateTime DtTransacao { get; set; }
         public Monetario Valor { get; set; }

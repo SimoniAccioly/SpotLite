@@ -20,14 +20,12 @@ namespace SpotLite.Repository.Mapping.Financeiro
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.Property(x => x.DtTransacao).IsRequired();
-            builder.Property(x => x.Valor).IsRequired().HasMaxLength(50);
             builder.Property(x => x.Descricao).IsRequired().HasMaxLength(1024);
-            builder.Property(x => x.Merchant).IsRequired().HasMaxLength(50);
 
 
             builder.OwnsOne<Monetario>(d => d.Valor, c =>
             {
-                c.Property(x => x.Valor).IsRequired();
+                c.Property(x => x.Valor).HasColumnName("ValorTransacao").IsRequired();
             });
 
             builder.OwnsOne<Merchant>(d => d.Merchant, c =>

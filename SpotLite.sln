@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotLite.Domain", "SpotLite
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotLite.Test", "SpotLite.Test\SpotLite.Test.csproj", "{4F963303-8AD2-43BE-A673-DABBA5A501B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotLite.Repository", "SpotLite.Repository\SpotLite.Repository.csproj", "{8173385F-9ABB-4DCF-BBD5-80DF3EDB53EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotLite.Repository", "SpotLite.Repository\SpotLite.Repository.csproj", "{8173385F-9ABB-4DCF-BBD5-80DF3EDB53EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotLite.Api", "SpotLite.Api\SpotLite.Api.csproj", "{49ECC345-A95F-4261-A2A2-7DD58D410C48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8173385F-9ABB-4DCF-BBD5-80DF3EDB53EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8173385F-9ABB-4DCF-BBD5-80DF3EDB53EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8173385F-9ABB-4DCF-BBD5-80DF3EDB53EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49ECC345-A95F-4261-A2A2-7DD58D410C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49ECC345-A95F-4261-A2A2-7DD58D410C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49ECC345-A95F-4261-A2A2-7DD58D410C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49ECC345-A95F-4261-A2A2-7DD58D410C48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
