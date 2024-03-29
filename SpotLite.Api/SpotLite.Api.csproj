@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SpotLite.Application\SpotLite.Application.csproj" />
     <ProjectReference Include="..\SpotLite.Repository\SpotLite.Repository.csproj" />
   </ItemGroup>
 
