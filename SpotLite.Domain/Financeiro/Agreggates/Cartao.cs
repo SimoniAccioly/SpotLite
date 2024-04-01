@@ -15,7 +15,7 @@ namespace SpotLite.Domain.Financeiro.Agreggates
         public String Numero { get; set; }
         public DateTime Validade { get; set; }
         public int CVV { get; set; }
-        public List<Transacao> Transacoes { get; set; } = new List<Transacao>();
+        public virtual IList<Transacao> Transacoes { get; set; } = new List<Transacao>();
 
         public void CriarTransacao(Merchant merchant, Monetario valor, string Descricao = "")
         {

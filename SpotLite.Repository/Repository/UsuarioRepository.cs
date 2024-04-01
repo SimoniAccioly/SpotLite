@@ -16,6 +16,7 @@ namespace SpotLite.Repository.Repository
             Context = context;
         }
 
+        //Caso não implementasse o EF Proxies, assim seria a implementação:
         //public Usuario GetById(Guid id)
         //{
         //    return this.Context.Usuarios

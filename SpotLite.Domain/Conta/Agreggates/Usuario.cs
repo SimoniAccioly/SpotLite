@@ -17,10 +17,10 @@ namespace SpotLite.Domain.Conta.Agreggates
         public string Senha { get; set; }
         public DateTime DtNascimento { get; set; }
         public string CPF { get; set; }
-        public List<Cartao> Cartoes { get; set; } = new List<Cartao>();
-        public List<Assinatura> Assinaturas { get; set; } = new List<Assinatura>();
-        public List<PlayList> PlayLists { get; set; } = new List<PlayList>();
-        public List<Notificacao> Notificacoes { get; set; } = new List<Notificacao>();
+        public virtual IList<Cartao> Cartoes { get; set; } = new List<Cartao>();
+        public virtual IList<Assinatura> Assinaturas { get; set; } = new List<Assinatura>();
+        public virtual IList<PlayList> PlayLists { get; set; } = new List<PlayList>();
+        public virtual IList<Notificacao> Notificacoes { get; set; } = new List<Notificacao>();
 
 
         public void CriarConta(string nome, string email, string senha, string cpf, DateTime dtNascimento, Plano plano, Cartao cartao)

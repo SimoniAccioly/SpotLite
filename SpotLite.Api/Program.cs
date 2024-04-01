@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using SpotLite.Application.Conta;
+using SpotLite.Application.Conta.Profile;
+using SpotLite.Application.Streaming;
 using SpotLite.Repository;
+using SpotLite.Repository.Repository;
 
 
 
@@ -14,8 +18,20 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<SpotLiteContext>(c =>
 {
-    c.UseSqlServer (builder.Configuration.GetConnectionString("SpotLiteConnection"));
+    c.UseLazyLoadingProxies()
+    .UseSqlServer (builder.Configuration.GetConnectionString("SpotLiteConnection"));
 });
+
+builder.Services.AddAutoMapper(typeof(UsuarioProfile).Assembly);
+
+//Repositories
+builder.Services.AddScoped<UsuarioRepository>();
+builder.Services.AddScoped<PlanoRepository>();
+builder.Services.AddScoped<BandaRepository>();
+
+//Services
+builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<BandaService>();
 
 var app = builder.Build();
 
