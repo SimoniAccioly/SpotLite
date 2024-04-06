@@ -10,7 +10,7 @@
       "url": "http://localhost:4200/",
       "runtimeArgs": [
         "--disable-web-security"
-      ]
+      ]//desabilitar cors
 
     },
     {
