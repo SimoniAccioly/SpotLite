@@ -24,6 +24,17 @@ builder.Services.AddDbContext<SpotLiteContext>(c =>
 
 builder.Services.AddAutoMapper(typeof(UsuarioProfile).Assembly);
 
+builder.Services.AddCors(c =>
+{
+    c.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
+
 //Repositories
 builder.Services.AddScoped<UsuarioRepository>();
 builder.Services.AddScoped<PlanoRepository>();
@@ -47,5 +58,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors();
 
 app.Run();

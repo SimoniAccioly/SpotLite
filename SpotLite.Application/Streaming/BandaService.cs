@@ -72,6 +72,7 @@ namespace SpotLite.Application.Streaming
                 throw new Exception("Banda não encontrada");
             }
 
+            //exemplo LINQ
             var album = (from x in banda.Albums
                          select x
                          ).FirstOrDefault(x => x.Id == id);

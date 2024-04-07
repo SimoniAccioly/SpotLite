@@ -40,7 +40,7 @@ namespace SpotLite.Api.Controllers
             return Ok(result);
         }
 
-        /*[HttpPost("login")]
+        [HttpPost("login")]
         public IActionResult Login([FromBody] Request.LoginRequest login)
         {
             if (ModelState.IsValid == false)
@@ -58,6 +58,6 @@ namespace SpotLite.Api.Controllers
 
             return Ok(result);
 
-        }*/
+        }
     }
 }

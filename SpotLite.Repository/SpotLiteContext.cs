@@ -30,6 +30,7 @@ namespace SpotLite.Repository
         }
 
 
+        //Escrever protected internal e vai aparecer OnModelCreating
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(SpotLiteContext).Assembly);
@@ -43,3 +44,4 @@ namespace SpotLite.Repository
         }
     }
 }
+

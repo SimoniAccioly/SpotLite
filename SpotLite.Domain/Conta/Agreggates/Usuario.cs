@@ -1,4 +1,5 @@
-﻿using SpotLite.Domain.Core.ValueObject;
+﻿using SpotLite.Domain.Core.Extension;
+using SpotLite.Domain.Core.ValueObject;
 using SpotLite.Domain.Financeiro.Agreggates;
 using SpotLite.Domain.Financeiro.ValueObject;
 using System.Security.Cryptography;
@@ -87,13 +88,7 @@ namespace SpotLite.Domain.Conta.Agreggates
 
         private String CriptografarSenha(string senhaAberta)
         {
-            SHA256 criptoProvider = SHA256.Create();
-
-            byte[] btexto = Encoding.UTF8.GetBytes(senhaAberta);
-
-            var criptoResult = criptoProvider.ComputeHash(btexto);
-
-            return Convert.ToHexString(criptoResult);
+            return senhaAberta.HashSHA256();
         }
     }
 

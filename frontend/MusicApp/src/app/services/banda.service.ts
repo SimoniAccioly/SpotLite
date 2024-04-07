@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Banda } from '../model/banda';
-//import { Album } from '../model/album';
+import { Album } from '../model/album';
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +10,7 @@ import { Banda } from '../model/banda';
 })
 export class BandaService {
 
-  private url = "https://localhost:7057/api/Banda"
+  private url = "https://localhost:44366/api/Banda"
 
   constructor(private httpClient: HttpClient) { }
 
@@ -22,7 +22,7 @@ export class BandaService {
     return this.httpClient.get<Banda>(`${this.url}/${id}`);
   }
 
-  // public getAlbunsBanda(id: string) : Observable<Album[]> {
-  //   return this.httpClient.get<Album[]>(`${this.url}/${id}/albums`);
-  // }
+  public getAlbunsBanda(id: string) : Observable<Album[]> {
+    return this.httpClient.get<Album[]>(`${this.url}/${id}/albums`);
+  }
 }

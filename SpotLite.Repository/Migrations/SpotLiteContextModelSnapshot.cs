@@ -268,17 +268,17 @@ namespace SpotLite.Repository.Migrations
                     b.Property<string>("Backdrop")
                         .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(500)");
 
                     b.HasKey("Id");
 

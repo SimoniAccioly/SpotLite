@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using SpotLite.Application.Conta.Dto;
 using SpotLite.Domain.Conta.Agreggates;
+using SpotLite.Domain.Core.Extension;
 using SpotLite.Domain.Financeiro.Agreggates;
 using SpotLite.Repository.Repository;
 using System;
@@ -55,11 +56,11 @@ namespace SpotLite.Application.Conta
             return result;
         }
 
-       /* public UsuarioDto Autenticar(String email, String senha)
+        public UsuarioDto Autenticar(String email, String senha)
         {
             var usuario = this.UsuarioRepository.Find(x => x.Email == email && x.Senha == senha.HashSHA256()).FirstOrDefault();
             var result = this.Mapper.Map<UsuarioDto>(usuario);
             return result;
-        }*/
+        }
     }
 }
