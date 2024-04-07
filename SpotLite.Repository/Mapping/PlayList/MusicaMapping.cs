@@ -18,6 +18,7 @@ namespace SpotLite.Repository.Mapping.PlayList
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.Property(x => x.Nome).IsRequired().HasMaxLength(50);
+            builder.Property(x => x.Favorito);
             builder.OwnsOne<Duracao>(d => d.Duracao, c =>
             {
                 c.Property(x => x.Valor).IsRequired().HasMaxLength(50);

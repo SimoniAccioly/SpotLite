@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SpotLite.Repository;
 
@@ -11,9 +12,11 @@ using SpotLite.Repository;
 namespace SpotLite.Repository.Migrations
 {
     [DbContext(typeof(SpotLiteContext))]
-    partial class SpotLiteContextModelSnapshot : ModelSnapshot
+    [Migration("20240407155415_altertableBandaEMusica")]
+    partial class altertableBandaEMusica
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

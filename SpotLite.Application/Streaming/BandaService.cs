@@ -145,6 +145,77 @@ namespace SpotLite.Application.Streaming
         }
 
 
+        public IEnumerable<MusicDto> ObterMusicasPorNome(string nomeMusica)
+        {
+            var bandas = this.BandaRepository.GetAll();
+            var musicasDto = new List<MusicDto>();
+
+            foreach (var banda in bandas)
+            {
+                foreach (var album in banda.Albums)
+                {
+                    var musica = album.Musica.FirstOrDefault(m => string.Equals(m.Nome, nomeMusica, StringComparison.OrdinalIgnoreCase));
+                    if (musica != null)
+                    {
+                        musicasDto.Add(new MusicDto
+                        {
+                            Id = musica.Id,
+                            Nome = musica.Nome,
+                            Duracao = musica.Duracao
+                        });
+                    }
+                }
+            }
+
+            return musicasDto;
+        }
+
+        public void MarcarComoFavorita(Guid idMusica)
+        {
+            var bandas = this.BandaRepository.GetAll();
+
+            foreach (var banda in bandas)
+            {
+                var musica = banda.Albums.SelectMany(album => album.Musica).FirstOrDefault(m => m.Id == idMusica);
+
+                if (musica != null)
+                {
+                    musica.Favorito = true;
+                    this.BandaRepository.Update(banda);
+                    return; 
+                }
+            }
+
+            throw new Exception("Música não encontrada");
+        }
+
+        public IEnumerable<MusicDto> ObterMusicasFavoritas()
+        {
+            var bandas = this.BandaRepository.GetAll();
+            var musicasDto = new List<MusicDto>();
+
+            foreach (var banda in bandas)
+            {
+                foreach (var album in banda.Albums)
+                {
+                    foreach (var musica in album.Musica)
+                    {
+                        if (musica.Favorito)
+                        {
+                            musicasDto.Add(new MusicDto
+                            {
+                                Id = musica.Id,
+                                Nome = musica.Nome,
+                                Duracao = musica.Duracao,
+                                Favorito = musica.Favorito
+                            });
+                        }
+                    }
+                }
+            }
+
+            return musicasDto;
+        }
 
     }
 }

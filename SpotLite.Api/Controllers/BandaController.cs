@@ -85,5 +85,44 @@ namespace SpotLite.Api.Controllers
 
         }
 
+
+        [HttpGet("Musicas")]
+        public IActionResult ObterMusicasPorNome([FromQuery] string nomeMusica)
+        {
+            var result = this._bandaService.ObterMusicasPorNome(nomeMusica);
+
+            if (result == null || result.Count() == 0)
+                return NotFound();
+
+            return Ok(result);
+        }
+
+        [HttpPost("favoritar/{idMusica}")]
+        public IActionResult MarcarComoFavorita(Guid idMusica)
+        {
+            try
+            {
+                _bandaService.MarcarComoFavorita(idMusica);
+                return Ok("Música marcada como favorita com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro ao marcar como favorita: {ex.Message}");
+            }
+        }
+
+        [HttpGet("favoritas")]
+        public IActionResult ObterMusicasFavoritas()
+        {
+            try
+            {
+                var musicasFavoritas = _bandaService.ObterMusicasFavoritas();
+                return Ok(musicasFavoritas);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro ao obter músicas favoritas: {ex.Message}");
+            }
+        }
     }
 }
