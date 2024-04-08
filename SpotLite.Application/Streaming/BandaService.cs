@@ -154,7 +154,7 @@ namespace SpotLite.Application.Streaming
             {
                 foreach (var album in banda.Albums)
                 {
-                    var musica = album.Musica.FirstOrDefault(m => string.Equals(m.Nome, nomeMusica, StringComparison.OrdinalIgnoreCase));
+                    var musica = album.Musica.FirstOrDefault(m => (m.Nome.Contains(nomeMusica, StringComparison.OrdinalIgnoreCase)));
                     if (musica != null)
                     {
                         musicasDto.Add(new MusicDto

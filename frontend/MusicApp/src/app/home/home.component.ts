@@ -7,13 +7,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { Router } from '@angular/router';
+import { PesquisaComponent } from '../pesquisa/pesquisa.component';
 
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatButtonModule, MatCardModule, HttpClientModule, CommonModule, FlexLayoutModule],
+  imports: [MatButtonModule, MatCardModule, HttpClientModule, CommonModule, FlexLayoutModule, PesquisaComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

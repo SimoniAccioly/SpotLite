@@ -1,0 +1,15 @@
+<div *ngIf="musicas && musicas.length > 0" style="margin-left: 20px">
+    <h2>Resultados da pesquisa</h2>
+    <mat-list>
+      <div *ngFor="let musica of musicas">
+        <h3>Música: {{ musica.nome }}</h3>
+        <p mat-line>Duração: {{ musica.duracao }}s</p>
+        <p mat-line>É favorita? {{ musica.favorito}}</p>
+       <button mat-button (click)="favoritar(musica);">Favoritar</button>
+      </div>
+    </mat-list>
+  </div>
+  
+  <div *ngIf="!musicas || musicas.length === 0">
+    <p>Nenhuma música encontrada.</p>
+  </div>
